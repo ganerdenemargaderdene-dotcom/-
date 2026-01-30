@@ -1,0 +1,36 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_grading_system
+  - ask_grade_range
+  - ask_grade_meaning
+
+entities:
+  - grade_code
+
+slots:
+  grade_code:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: grade_code
+
+responses:
+  utter_greet:
+    - text: |
+        Сайн уу! 👋 Би **NUM Assistant**.
+        МУИС/NUM-ийн дүнгийн нэмэлт тэмдэглэгээ болон дүн бодох дүрмийг тайлбарлаж өгнө.
+
+  utter_goodbye:
+    - text: "Баяртай! Амжилт хүсье. 👋"
+
+  utter_ask_grade_code:
+    - text: |
+        Ямар тэмдэглэгээ тайлбарлуулах вэ? (W, I, WF, G, R, F, NA, E, CR, NR, U, S, CA, RC, NC)
+
+actions:
+  - action_show_grading_policy
+  - action_explain_grade_code

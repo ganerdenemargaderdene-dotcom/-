@@ -1,0 +1,9 @@
+version: "3.1"
+
+stories:
+  - story: greet then ask grading
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_grade_meaning
+      - action: action_explain_grade_code

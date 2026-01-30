@@ -1,0 +1,61 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - сайн уу
+      - сайн байна уу
+      - hi
+      - hello
+      - hey num assistant
+      - num assistant
+
+  - intent: goodbye
+    examples: |
+      - баяртай
+      - баярлалаа
+      - bye
+      - see you
+
+  - intent: ask_grading_system
+    examples: |
+      - МУИС-ийн дүнгийн тэмдэглэгээ тайлбарла
+      - NUM grading codes list
+      - дүнгийн коднуудыг жагсаа
+      - бүх дүнгийн тэмдэглэгээг хэлээд өг
+      - grading system тайлбар
+      - дүнгийн тэмдэглэгээ гэж юу вэ?
+
+  - intent: ask_grade_range
+    examples: |
+      - grade range
+      - grading range
+      - what is the grade range
+      - grade range for num
+      - range of grades
+  - intent: ask_grade_meaning
+    examples: |
+      - [W](grade_code) гэж юу вэ?
+      - [I](grade_code) гэж юу вэ?
+      - [WF](grade_code) гэж юу гэсэн үг вэ?
+      - [G](grade_code) гэж юу вэ?
+      - [R](grade_code) гэж юу вэ?
+      - [F](grade_code) гэж юу вэ?
+      - [NA](grade_code) гэж юу вэ?
+      - [E](grade_code) гэж юу вэ?
+      - [CR](grade_code) гэж юу вэ?
+      - [NR](grade_code) гэж юу вэ?
+      - [U](grade_code) гэж юу вэ?
+      - [S](grade_code) гэж юу вэ?
+      - [CA](grade_code) гэж юу вэ?
+      - [RC](grade_code) гэж юу вэ?
+      - [NC](grade_code) гэж юу вэ?
+      - what does [W](grade_code) mean?
+      - explain [WF](grade_code)
+      - meaning of [NR](grade_code)
+      - [ca](grade_code) meaning
+      - [rc](grade_code) meaning
+
+  - regex: grade_code
+    examples: |
+      - (?i)\b(WF|W|I|G|R|F|NA|E|CR|NR|U|S|CA|RC|NC)\b

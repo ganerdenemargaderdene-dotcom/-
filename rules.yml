@@ -1,0 +1,27 @@
+version: "3.1"
+
+rules:
+  - rule: Greet
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: List grading system
+    steps:
+      - intent: ask_grading_system
+      - action: action_explain_grade_code
+
+  - rule: Explain grade meaning
+    steps:
+      - intent: ask_grade_meaning
+      - action: action_explain_grade_code
+
+  - rule: Explain grade range
+    steps:
+      - intent: ask_grade_range
+      - action: action_explain_grade_code
