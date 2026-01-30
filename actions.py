@@ -81,11 +81,11 @@ class ActionExplainGradeCode(Action):
         if not text:
             dispatcher.utter_message(
                 text=(
-                    f"'{code}' тэмдэглэгээний тайлбар энэ удаад **өгсөн зурагт харагдсангүй** "
-                    "эсвэл **dun.yml**-ийн дүрэмд тодорхойлолт байхгүй байна."
+                    f"'{code}' тэмдэглэгээний тайлбар энэ удаад  "
+                    "эсвэл тодорхойлолт байхгүй байна."
                 )
             )
             return []
 
-        dispatcher.utter_message(text=f"**{code}**: {text}\n\n(Эх сурвалж: таны өгсөн зураг)")
+        dispatcher.utter_message(text=f"**{code}**: {text}\n\n(Эх сурвалж: N/A)")
         return []
