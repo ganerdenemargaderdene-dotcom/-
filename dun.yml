@@ -7,3 +7,11 @@ policy:
     - "Тухайн улиралд судалж буй хичээлийн дүнг багш системд оруулсан шалгалтын хуваарийн дагуу шалгалт авсан өдрөөс эхлэн ажлын 5 хоногийн дотор оруулна."
     - "Багш G, I, E, W, WF үнэлгээг оруулах эрхтэй. Эдгээрээс бусад үнэлгээг Бүртгэл, дүн шинжилгээний төвийн дүн бүртгэл хариуцсан мэргэжилтэн оруулна."
     - "Өмнөх улирлын дүн зөрүүтэй тохиолдолд багш дүн оруулах эрхгүй бөгөөд энэ тохиолдолд Бүртгэл, дүн шинжилгээний төвийн дүн бүртгэл хариуцсан мэргэжилтэнд хандана."
+
+policy_en:
+  en:
+    - "When calculating cumulative GPA/average grade, if the same course is taken multiple times, the most recent grade is used."
+    - "Except for G, WF, CR, and RC, other additional grade codes do not affect GPA/average grade calculations."
+    - "For courses in the current semester, the instructor enters grades into the system within 5 working days after the exam date (according to the exam schedule)."
+    - "Instructors can enter G, I, E, W, WF. Other codes are entered by the grade/registration specialist at the Registration & Analysis Center."
+    - "If there is a discrepancy in a previous semester’s grade, the instructor cannot enter/modify it; the student should contact the grade/registration specialist at the Registration & Analysis Center."
